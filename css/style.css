@@ -136,26 +136,34 @@ h1 span{
     font-size: 20px;
 }
 .button{
-    
     margin: 20px;
 }
-
+/* .button a{
+    font-size: 19px;
+} */
 .button .call{
     background-color: #46b1de;
     color: white;
-    padding: 10px 30px;
+    padding: 16px 35px;
+    /* width: 180px;
+    height: 60px; */
 }
 
 .button .services{
     background-color: white;
     color: #46b1de;
-    padding: 10px 20px;
+    padding: 16px 35px;
     margin-left: 50px;
+    /* width: 180px;
+    height: 60px; */
 }
 .battob__1{
     border: 1px solid black;
     text-transform: uppercase;
     font-size: 20px;
+    width: 180px;
+    height: 60px;
+    display: block;
 }
 
 .pictures{
