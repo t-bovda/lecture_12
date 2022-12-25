@@ -1,0 +1,326 @@
+*{margin: 0;
+  /* box-sizing: border-box; */
+  /* ламаються шапки в талиці ((  */
+}
+@font-face {
+    font-family: "Russo One";
+    font-display: swap;
+    src: url("../fonts/RussoOne.woff2") format("woff2"), 
+         url("../fonts/RussoOne.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Muller";
+    font-display: swap;
+    src: url("../fonts/MullerBold.woff2") format("woff2"), 
+         url("../fonts/MullerBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Muller";
+    font-display: swap;
+    src: url("../fonts/MullerRegular.woff2") format("woff2"), 
+         url("../fonts/MullerRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+
+
+
+
+.container{
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.first-screen {
+    background-image: url(../img/background.jpg) ;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 800px;
+    position: relative;
+    padding-top: 150px;
+    box-sizing: border-box;
+}
+header{
+    top: 0;
+    left: 50%;
+    position: absolute;
+    /* position: fixed; */ 
+    z-index: 1;
+    padding: 25px 0;
+    transform: translate(-50%, 0);
+
+
+   }
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}  
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;  
+}
+
+span{
+    display: block;
+    font-size: 20px;
+    color: #46b1de;
+    width: 150px;
+}
+
+.menu{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.menu li{
+    display: inline-block;
+    padding-left: 60px ;
+
+}
+.phone{
+    font-size: 20px;
+}
+.title{
+    display: block;
+    width: 400px;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    
+}
+h1 span{
+    width: 400px;
+    font-size: 30px;
+}
+.title p{
+    font-size: 20px;
+}
+.button{
+    
+    margin: 20px;
+}
+
+.button .call{
+    background-color: #46b1de;
+    color: white;
+    padding: 10px 30px;
+}
+
+.button .services{
+    background-color: white;
+    color: #46b1de;
+    padding: 10px 20px;
+    margin-left: 50px;
+}
+.battob__1{
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.pictures{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 350px;
+    
+}
+.info-block{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    font-size: 20px;
+    width: 300px;
+    background-color: white;
+    padding: 10px;   
+    border: 1px solid black;
+    z-index: 1;
+
+}
+.number{
+    font-size: 60px;
+    width: auto;
+    margin: 10px;
+}
+.lady{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* Більш красиво вирівняє жіночку по правому краю */
+}
+.tt{
+    margin-top: 150px;
+}
+.title__2{
+    text-align: center;  
+}
+h2{
+    font-size: 28px;
+}
+
+h2 span{
+    display: inline;
+    font-size: 28px;
+}
+.title__2 p{
+    width: 650px;
+    margin: 10px auto;
+    font-size: 20px;
+}
+.cell{
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: flex-start; */
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    margin: 20px;
+
+    border: 1px solid black;
+}
+.cap{
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+    justify-content: flex-start;
+    /* Чи потрібно тут для вирівнювання align-item , бо як задав однакову висоту наче і самі вирівнялись */
+    /* Краще не обмежувати елементи по висоті, а вирівнювати саме за допомогою align-item */
+
+}
+.number__2{
+    font-size: 50px;
+    color: #46b1de;
+    /* height: 60px; */
+}
+.description{
+    color: #46b1de;
+    width: 190px;
+    /* height: 40px; */
+    padding: 10px;
+    font-weight: 700;
+}
+.cell p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.table{
+    background: #46b1de;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    /* flex-direction: column; */
+    /* Спробуйте тут все ж таки обійтися одними грідами, без додаткових column та флексів */
+}
+h1, h2 {
+    font-family: 'Russo One', sans-serif;
+}
+.number, .number__2, .description, .title p{
+    font-family: 'Muller', sans-serif;
+    font-weight: 700;
+}
+body{
+    font-family: 'Muller', sans-serif;
+
+}
+/* footer{
+    background: linear-gradient(90deg, rgba(161,199,212,1) 0%, rgba(18,129,167,1) 100%);
+} */
+
+.footer {
+    background: linear-gradient(90deg, rgba(161,199,212,1) 0%, rgba(18,129,167,1) 100%);
+    margin-top: 50px;
+    /* Футер не займав всю ширину екрану до цього */
+}
+
+.footer__container{
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer__left{
+    width: 40%;
+    margin-bottom: 40px;
+
+}
+.dark{
+    color: #0F2C4A;
+    font-size: 30px;
+    width: 300px;
+    
+}
+.navigation {
+    font-size: 30px;
+    line-height: 50px;
+    display: block;
+}
+.navigation p a{
+    color: #0F2C4A;
+}
+.timetable{
+    font-size: 30px; 
+    display: block;
+}
+ul{
+    color: #0F2C4A;
+    list-style-type: none;
+}
+.block{
+    /* width: 35%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 25px;
+}
+.footer__right{
+    width: 40%;
+    color: white;
+    font-size: 20px;
+    line-height: 35px;
+    
+}
+.footer__right p:nth-child(1){
+    font-size: 30px;
+}
+.phone__footer, .instagram, .email {
+    display: flex;
+    /* justify-content: start;  наскільки він тут потрібен */
+    align-items: center;
+    width: 250px;
+}
+.phone__footer a, .instagram a, .email a{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.messengers{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 200px;
+}
+.Copyright{
+    font-size: 10px;
+    display: flex;
+    justify-content: center; 
+}
