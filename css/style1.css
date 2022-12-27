@@ -60,10 +60,6 @@
     width: 1180px;
     margin: 0 auto;
 }
-.container__2{
-    width: 980px;
-    margin: 0 auto;
-}
 
 .first-screen {
     background-image: url(../img/background.jpg) ;
@@ -112,18 +108,14 @@ a{
 
 .menu{
     list-style-type: none;
+    /* padding-left: 0; */
+    /* margin-bottom: 0; */
+    /* margin-top: 0; */
     font-size: 16px;
-    
-    
-}
-.menu ul{
-    padding-inline-start: 0;
 }
 .menu li{
     display: inline-block;
-    padding-left: 80px ;
-    
-    
+    padding-left: 100px ;
 
 }
 .phone{
@@ -142,7 +134,7 @@ a{
 .title{
     display: block;
     /* width: 400px; */
-    /* margin-top: 185px; */
+    /* margin-top: 158px; */
 }
 h1{
     text-transform: uppercase;
@@ -169,17 +161,19 @@ h1 span{
 }
 .button a{
     font-size: 19px;
-    display: block;
+    
 
 }
 .button .call{
     background-color: #46b1de;
     color: white;
+    /* padding: 16px 35px; */
 }
 
 .button .services{
     background-color: white;
     color: #46b1de;
+    /* padding: 16px 35px; */
 }
 .batton__1{
     text-transform: uppercase;
@@ -188,9 +182,10 @@ h1 span{
     height: 60px;
     border-radius: 8px;
     padding: 16px 35px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    
+    /* display: block;
+    align-items: center;
+    justify-content: center; */
 
 }
 
@@ -198,8 +193,8 @@ h1 span{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    position: relative;
-    top: 600px;
+    /* padding-top: 50px; */
+    top: calc(636px - 60px);
     
 }
 .info-block{
@@ -214,7 +209,6 @@ h1 span{
     padding: 10px;   
     border: 1px solid black;
     z-index: 1;
-    
 
 }
 .number{
