@@ -184,7 +184,6 @@ h1 span{
     border-radius: 8px;
     padding: 16px 35px;
     text-align: center;
-    /* line-height: 19px; */
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     line-height: 30px 
@@ -195,7 +194,7 @@ h1 span{
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 90px;
-    
+        
 }
 .info-block{
     display: flex;
@@ -207,15 +206,14 @@ h1 span{
     border-radius: 8px;
     background-color: white;
     padding: 10px;   
-    border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 1;
-    
-
 }
 .number{
     font-size: 60px;
     width: auto;
     margin: 10px;
+    color: #46b1de;
 }
 .lady{
     position: absolute;
@@ -230,25 +228,27 @@ h1 span{
     text-align: center;  
 }
 h2{
-    font-size: 28px;
+    font-size: 34px;
 }
 
 h2 span{
     display: inline;
-    font-size: 28px;
+    font-size: 34px;
+    color: #46b1de;
 }
 .title__2 p{
     width: 650px;
     margin: 10px auto;
-    font-size: 20px;
+    font-size: 16px;
 }
+/* *******************table****************** */
 .cell{
     /* display: flex;
     align-items: flex-end;
     justify-content: flex-start; */
     width: 300px;
-    height: 150px;
-    padding: 10px;
+    height: 176px;
+    padding: 8px;
     border-radius: 10px;
     background: white;
     margin: 20px;
@@ -260,51 +260,49 @@ h2 span{
     align-items: flex-end;
     align-items: center;
     justify-content: flex-start;
-    /* Чи потрібно тут для вирівнювання align-item , бо як задав однакову висоту наче і самі вирівнялись */
-    /* Краще не обмежувати елементи по висоті, а вирівнювати саме за допомогою align-item */
-
+    
 }
 .number__2{
-    font-size: 50px;
+    font-size: 40px;
     color: #46b1de;
-    /* height: 60px; */
 }
 .description{
     color: #46b1de;
     width: 190px;
-    /* height: 40px; */
+    font-size: 18px;
     padding: 10px;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 .cell p{
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 10px;
 }
 .table{
     background: #46b1de;
-    border-radius: 10px;
+    width: auto;
+    border-radius: 12px;
     display: flex;
     justify-content: space-between;
+    padding: 16px, 20px;
     margin-top: 50px;
     /* flex-direction: column; */
-    /* Спробуйте тут все ж таки обійтися одними грідами, без додаткових column та флексів */
 }
+
+/* ****************fonts********************* */
 h1{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
-.number, .number__2, .description, .title p{
-    font-family: 'Muller', sans-serif;
-    font-weight: 700;
+.logo{
+    font-family: "SofiaSans", sans-serif;
+    font-weight: 400;
 }
 body{
-    font-family: 'Muller', sans-serif;
-
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
-/* footer{
-    background: linear-gradient(90deg, rgba(161,199,212,1) 0%, rgba(18,129,167,1) 100%);
-} */
-
+/* *********footer********* */
 .footer {
     background: linear-gradient(90deg, rgba(161,199,212,1) 0%, rgba(18,129,167,1) 100%);
     margin-top: 50px;
