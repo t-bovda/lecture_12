@@ -120,21 +120,13 @@ header{
     header{
         width: 100%;
         top: 44px;
-        left: 50%;
-        position: absolute;
-        z-index: 1;
-        transform: translate(-50%, 0);
-    }
+}
 }
 @media(max-width: 480px){
     header{
         width: 100%;
         top: 14px;
-        left: 50%;
-        position: absolute;
-        z-index: 1;
-        transform: translate(-50%, 0);
-    }
+}
 }
 
 .header__content{
@@ -154,9 +146,6 @@ a{
 }
 @media(max-width: 480px){
     .header__content .logo {
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-start;  
         margin-left: 20px;
     }
 }
@@ -181,19 +170,13 @@ a{
 }
 @media(max-width: 992px){
     .name{
-       display: block;
        font-size: 30px;
-       color: #46b1de;
-       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+}
 }
 @media(max-width: 480px){
     .name{
-        display: block;
         font-size: 16px;
-        color: #46b1de;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-     }
+}
 }
 
 .name p{
@@ -223,7 +206,6 @@ a{
 }
 @media(max-width: 992px){
     .menu li{
-        display: inline-block;
         padding-left: 20px ;   
     }
 }
@@ -237,9 +219,6 @@ a{
 @media(max-width: 480px){
     .phone{
         font-size: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between; 
         margin-right: 20px;   
         /* так красивіше */
     }
@@ -279,7 +258,6 @@ h1{
 }
 @media(max-width: 480px){
     h1{
-        text-transform: uppercase;
         font-size: 30px;
         width: 100%;
         height: 100%;
@@ -294,7 +272,6 @@ h1 span{
 @media(max-width: 480px){
     h1 span{
         font-size: 30px;
-        color: #46b1de;
     }
 }
 .title p{
@@ -316,9 +293,7 @@ h1 span{
 }
 @media(max-width: 480px){
     .button{
-        display: flex;
         width: 90%;
-        justify-content: space-between;
         margin: auto;
     }
 }
@@ -357,10 +332,10 @@ h1 span{
 @media(max-width: 480px){
     .pictures{
         display: flex;
-        /* justify-content: space-between; */
         align-items: flex-start;
         margin-top: 310px; 
-        flex-direction: column;       
+        flex-direction: column;
+        margin-left: 100px;       
     }
 }
 .info-block{
@@ -521,7 +496,7 @@ input{
     font-weight: 600;
     font-size: 19px;
     text-align: center;
-    color: color: rgba(27, 29, 31, 0.51);;
+    color: rgba(27, 29, 31, 0.51);;
     position: relative;
 }
 .you_data{
