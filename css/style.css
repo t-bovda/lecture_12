@@ -60,9 +60,34 @@
     width: 1180px;
     margin: 0 auto;
 }
+@media(max-width: 992px){
+    .container{
+        max-width: 992px;
+        margin: 0 auto;
+    } 
+}
+@media(max-width: 480px){
+    .container{
+        width: 480px;
+        margin: 0 auto;
+    } 
+}
+
 .container__2{
     width: 980px;
     margin: 0 auto;
+}
+@media(max-width: 992px){
+    .container{
+        max-width: 992px;
+        margin: 0 auto;
+    } 
+}
+@media(max-width: 480px){
+    .container{
+        width: 480px;
+        margin: 0 auto;
+    } 
 }
 
 .first-screen {
@@ -71,8 +96,17 @@
     background-size: cover;
     height: 663px;
     position: relative;
-    padding-top: 185px;
-   
+    padding-top: 185px;   
+}
+@media(max-width: 480px){
+    .first-screen {
+        background-image: url(../img/background.jpg) ;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        height: 663px;
+        position: relative;
+        padding-top: 85px;   
+    }
 }
 /* **********************header************************************* */
 header{
@@ -82,6 +116,27 @@ header{
     z-index: 1;
     transform: translate(-50%, 0);
 }
+@media(max-width: 992px){
+    header{
+        width: 100%;
+        top: 44px;
+        left: 50%;
+        position: absolute;
+        z-index: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@media(max-width: 480px){
+    header{
+        width: 100%;
+        top: 14px;
+        left: 50%;
+        position: absolute;
+        z-index: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
 .header__content{
     display: flex;
     justify-content: space-between;
@@ -97,46 +152,118 @@ a{
     align-items: flex-end;
     justify-content: flex-start;  
 }
+@media(max-width: 480px){
+    .header__content .logo {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;  
+        margin-left: 20px;
+    }
+}
 .logo img{
     height: 80px;
+}
+@media(max-width: 992px){
+    .logo img{
+        height: 60px;
+    }
+}
+@media(max-width: 480px){
+    .logo img{
+        height: 34px;
+    }
 }
 .name{
     display: block;
     font-size: 38px;
     color: #46b1de;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    /* width: 150px; */
 }
+@media(max-width: 992px){
+    .name{
+       display: block;
+       font-size: 30px;
+       color: #46b1de;
+       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+@media(max-width: 480px){
+    .name{
+        display: block;
+        font-size: 16px;
+        color: #46b1de;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+}
+
 .name p{
     font-size: 27px;
+}
+@media(max-width: 480px){
+    .name p{
+        font-size: 11px;
+    }
 }
 
 .menu{
     list-style-type: none;
-    font-size: 16px;
-    
-    
+    font-size: 16px; 
+}
+@media(max-width: 480px){
+    .menu{
+        display: none;
+    }
 }
 .menu ul{
     padding-inline-start: 0;
 }
 .menu li{
     display: inline-block;
-    padding-left: 80px ;
-   
+    padding-left: 80px ;   
 }
+@media(max-width: 992px){
+    .menu li{
+        display: inline-block;
+        padding-left: 20px ;   
+    }
+}
+
 .phone{
     font-size: 16px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
+}
+@media(max-width: 480px){
+    .phone{
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        margin-right: 20px;   
+        /* так красивіше */
+    }
 }
 .phone img{
     height: 24px;
 }
+@media(max-width: 992px){
+    .phone img{
+        height: 20px;
+    }
+}
+@media(max-width: 480px){
+    .phone img{
+    height: 15px;}
+}
+
 .Languages{
     font-size: 20px;
+}
+@media(max-width: 480px){
+    .Languages{
+        display: none;
+    }
 }
 /* **************************title********************** */
 .title{
@@ -149,21 +276,51 @@ h1{
     font-size: 40px;
     width: 530px;
     height: 185px;
-    
+}
+@media(max-width: 480px){
+    h1{
+        text-transform: uppercase;
+        font-size: 30px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
 }
 h1 span{
     font-size: 40px;
     width: 530px;
     color: #46b1de;
 }
+@media(max-width: 480px){
+    h1 span{
+        font-size: 30px;
+        color: #46b1de;
+    }
+}
 .title p{
     font-size: 16px;
     width: 464px;
+}
+@media(max-width: 480px){
+    .title p{
+        font-size: 16px;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
 }
 .button{
     display: flex;
     width: 480px;
     justify-content: space-between;
+}
+@media(max-width: 480px){
+    .button{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        margin: auto;
+    }
 }
 .button a{
     box-shadow: 0px 2px 10px #050505;
@@ -195,8 +352,16 @@ h1 span{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 90px;
-        
+    margin-top: 90px;        
+}
+@media(max-width: 480px){
+    .pictures{
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: flex-start;
+        margin-top: 310px; 
+        flex-direction: column;       
+    }
 }
 .info-block{
     display: flex;
@@ -221,8 +386,25 @@ h1 span{
     position: absolute;
     bottom: 0;
     right: 0;
-    /* Більш красиво вирівняє жіночку по правому краю */
 }
+@media(max-width: 480px){
+    .lady{
+        /* position: absolute; */
+        bottom: 0;
+        margin: 0 auto;
+        /* left: 0;
+        margin-top: 50px; */
+       
+    }
+}
+@media(max-width: 480px){
+    .lady img{
+        width: 400px;       
+    }
+}
+
+
+
 .tt{
     margin-top: 150px;
 }
@@ -245,9 +427,6 @@ h2 span{
 }
 /* *******************table****************** */
 .cell{
-    /* display: flex;
-    align-items: flex-end;
-    justify-content: flex-start; */
     width: 300px;
     height: 176px;
     padding: 8px;
@@ -365,9 +544,15 @@ input placeholder {
     background: url(img/phone.svg) no-repeat;
 }
 
-    
+/* *******************pictures*************************** */
 
-
+.pictures__people{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 90px;
+    /* flex-direction: column; */
+}
 
 /* ****************fonts********************* */
 h1{
@@ -385,8 +570,7 @@ body{
 /* *********footer********* */
 .footer {
     background: linear-gradient(90deg, rgba(161,199,212,1) 0%, rgba(18,129,167,1) 100%);
-    margin-top: 50px;
-    /* Футер не займав всю ширину екрану до цього */
+    margin-top: 91px;
 }
 
 .footer__container{
@@ -398,29 +582,38 @@ body{
 .footer__left{
     width: 40%;
     margin-bottom: 40px;
-
 }
+/* .logo > img{
+    height: 80px;
+} */
 .dark{
     color: #0F2C4A;
-    font-size: 30px;
-    width: 300px;
-    
+    font-size: 39px;
+    width: 302px;
+}
+.dark > p{
+    font-size: 26px;
+
 }
 .navigation {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 50px;
     display: block;
 }
 .navigation p a{
-    color: #0F2C4A;
+    color: #0F2d4A;
 }
 .timetable{
-    font-size: 30px; 
+    font-size: 20px; 
     display: block;
 }
 ul{
-    color: #0F2C4A;
+    color: #0F2D4A;
     list-style-type: none;
+}
+.timetable ul li:nth-child(1) {
+    font-family: 'Roboto';
+    font-weight: 600;
 }
 .block{
     /* width: 35%; */
@@ -437,11 +630,10 @@ ul{
     
 }
 .footer__right p:nth-child(1){
-    font-size: 30px;
+    font-size: 34px;
 }
 .phone__footer, .instagram, .email {
     display: flex;
-    /* justify-content: start;  наскільки він тут потрібен */
     align-items: center;
     width: 250px;
 }
