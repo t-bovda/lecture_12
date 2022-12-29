@@ -63,13 +63,13 @@
 @media(max-width: 992px){
     .container{
         max-width: 992px;
-        margin: 0 auto;
+        width: 98%;
     } 
 }
 @media(max-width: 480px){
     .container{
         width: 480px;
-        margin: 0 auto;
+        width: 98%;
     } 
 }
 
@@ -77,16 +77,11 @@
     width: 980px;
     margin: 0 auto;
 }
-@media(max-width: 992px){
-    .container{
-        max-width: 992px;
-        margin: 0 auto;
-    } 
-}
+
 @media(max-width: 480px){
-    .container{
+    .container__2{
         width: 480px;
-        margin: 0 auto;
+        width: 98%;
     } 
 }
 
@@ -100,11 +95,6 @@
 }
 @media(max-width: 480px){
     .first-screen {
-        background-image: url(../img/background.jpg) ;
-        background-repeat: no-repeat; 
-        background-size: cover;
-        height: 663px;
-        position: relative;
         padding-top: 85px;   
     }
 }
@@ -218,7 +208,7 @@ a{
 }
 @media(max-width: 480px){
     .phone{
-        font-size: 12px;
+        font-size: 15px;
         margin-right: 20px;   
         /* так красивіше */
     }
@@ -286,29 +276,29 @@ h1 span{
         margin: auto;
     }
 }
-.button{
+.btn{
     display: flex;
     width: 480px;
     justify-content: space-between;
 }
 @media(max-width: 480px){
-    .button{
+    .btn{
         width: 90%;
         margin: auto;
     }
 }
-.button a{
+.btn a{
     box-shadow: 0px 2px 10px #050505;
 }
 
-.button .call{
+.btn .call{
     background-color: #46b1de;
     color: white;
 }
 
-.button .services{
+.btn .services{
     background-color: white;
-    color: #46b1de;
+    color: #46B1DE;
 }
 .button__1{
     text-transform: uppercase;
@@ -331,11 +321,12 @@ h1 span{
 }
 @media(max-width: 480px){
     .pictures{
-        display: flex;
         align-items: flex-start;
         margin-top: 310px; 
         flex-direction: column;
-        margin-left: 100px;       
+        margin-left: 50px;
+        gap: 10px;
+        
     }
 }
 .info-block{
@@ -351,6 +342,13 @@ h1 span{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
+@media(max-width: 480px){
+    .info-block{
+        width: 380px;
+        border: 1px solid #46b1de;
+    }
+}
+
 .number{
     font-size: 60px;
     width: auto;
@@ -366,10 +364,7 @@ h1 span{
     .lady{
         /* position: absolute; */
         bottom: 0;
-        margin: 0 auto;
-        /* left: 0;
-        margin-top: 50px; */
-       
+        margin: 0 auto;           
     }
 }
 @media(max-width: 480px){
@@ -377,11 +372,14 @@ h1 span{
         width: 400px;       
     }
 }
-
-
-
+/* *************WHY YOU SHOULD CHOOSE EXACTLY ME?************************* */
 .tt{
     margin-top: 150px;
+}
+@media(max-width: 480px){
+    .tt{
+        margin-top: 400px;
+    }
 }
 .title__2{
     text-align: center;  
@@ -400,6 +398,11 @@ h2 span{
     margin: 10px auto;
     font-size: 16px;
 }
+@media(max-width: 480px){
+    .title__2 p{
+        width: 98%;
+    }
+}
 /* *******************table****************** */
 .cell{
     width: 300px;
@@ -408,12 +411,16 @@ h2 span{
     border-radius: 10px;
     background: white;
     margin: 20px;
-
-    border: 1px solid black;
+}
+@media(max-width: 480px){
+    .cell{
+        width: 96%;
+        margin: 10px auto;
+        height: auto;
+    }
 }
 .cap{
     display: flex;
-    /* align-items: flex-end; */
     align-items: center;
     justify-content: flex-start;
     
@@ -424,7 +431,7 @@ h2 span{
 }
 .description{
     color: #46b1de;
-    width: 190px;
+    width: 210px;
     font-size: 18px;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
@@ -444,6 +451,14 @@ h2 span{
     margin-top: 50px;
     margin-left: -20px;
     /* flex-direction: column; */
+}
+@media(max-width: 480px){
+    .table{
+        flex-direction: column;
+        width: 96%;
+        margin: 50px auto;
+
+    }
 }
 /* ********************making an appointment************************ */
 .external__botder{
